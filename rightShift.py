@@ -15,6 +15,9 @@ number : the number the user gave you(integer)
 text : the string input(string)
 product : the varible for yhe return statement (string)
 '''
+from turtle import right
+
+
 def rightShift(command,text):
     rightshift = command.split("-")
     number = rightshift[1]
@@ -22,3 +25,6 @@ def rightShift(command,text):
     letters = text[number:]
     product = letters+"#"*number
     return(product)
+
+rightShiftInput = input("Input here:")
+print(rightShift(rightShiftInput))
