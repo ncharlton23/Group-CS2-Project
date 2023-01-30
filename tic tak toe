@@ -1,0 +1,24 @@
+def main():
+    answer=input("player 1 what do you want to be x or 0?")
+    if answer==x:
+        player1="x"
+        player2="0"
+    elif answer==0:
+        player1="0"
+        player2="x"
+        
+
+
+    board= [["A","B","C"],["D","E","F"],["G","H","I"]]
+    print_b(board)
+
+def print_b(board):
+   
+    for row in range(0,3):
+         for col in range(0,3):
+            print(board[row][col], end = " ")
+         print("")
+
+
+if __name__ == "__main__":
+    main()    
